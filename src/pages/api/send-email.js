@@ -6,14 +6,14 @@ export default function (req, res) {
       port: 465,
       host: "smtp.gmail.com",
       auth: {
-        user: 'fintech@ibcms.de',
+        user: 'serzhanator@gmail.com',
         pass: process.env.password,
       },
       secure: true,
     })
     const mailData = {
-      from: 'bancilaa78@gmail.com',
-      to: 'ardut2004@gmail.com',
+      from: 'serzhanator@gmail.com',
+      to: 'fintech@ibcms.de',
       subject: `Message From ${req.body.name}`,
       text: req.body.message + " | Sent from: " + req.body.email,
       html: `<div>${req.body.message}</div><p>Sent from:
