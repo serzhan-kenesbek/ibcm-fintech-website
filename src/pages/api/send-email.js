@@ -6,7 +6,7 @@ export default function (req, res) {
       port: 465,
       host: "smtp.gmail.com",
       auth: {
-        user: 'bancilaa78@gmail.com',
+        user: 'fintech@ibcms.de',
         pass: process.env.password,
       },
       secure: true,
