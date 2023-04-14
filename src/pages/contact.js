@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Head from "next/head";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -39,6 +40,9 @@ const Contact = () => {
 
   return (
     <div className="flex justify-center bg-gradient-to-b from-blue-900 to-blue-600 min-h-screen py-12">
+      <Head>
+        <title>Contact Form</title>
+      </Head>
       <div className="max-w-md mx-auto px-4">
         {error && (
           <div
